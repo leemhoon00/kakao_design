@@ -29,6 +29,8 @@
         justify-content: flex-start;
         column-gap: 0.2rem;
         background-color:transparent;
+        background-color:lightskyblue;
+        z-index: 1;
     ">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -68,22 +70,628 @@
         </div>
     </header>
 
-    <div id="main" style="
-        display:flex;
-        justify-content: flex-start;
-    ">
+    <div id="main" style="z-index:0;">
+
         <div class="my-message" style="
-            margin-left:auto;
+            display:flex;
+            align-items:center;
+            column-gap: 0.3rem;
+            margin-bottom:0.5rem;
         ">
             
-            <textarea rows=1 data-autoresize style="
-                border-radius:10px;
-                border:none;
-                resize:none;
-                background-color:yellow;
-                padding:0.4rem;
-                width:auto;
-            ">ddd</textarea>
+            <div style="
+                position:relative;
+                align-self:flex-end;
+                margin-left:auto;
+                font-size:small;
+                color:rgb(83, 83, 83);
+            ">
+                <div style="
+                    position: absolute;
+                    top: -1rem;
+                    right:0;
+                    color:yellow;
+                ">
+                    1
+                </div>
+                오후 10:40
+            </div>
+            <div>
+                
+                <div style="
+                    border-radius: 10px;
+                    background-color:yellow;
+                    padding:0.4rem;
+                ">
+                    메세지1메세지1메세지1<br>
+                    메세지1
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="my-message" style="
+            display:flex;
+            align-items:center;
+            column-gap: 0.3rem;
+            margin-bottom:0.5rem;
+        ">
+            <div style="
+                align-self:flex-end;
+                margin-left:auto;
+                font-size:small;
+                color:rgb(83, 83, 83);
+            ">
+                오후 10:40
+            </div>
+            <div>
+                
+                <div style="
+                    border-radius: 10px;
+                    background-color:yellow;
+                    padding:0.4rem;
+                ">
+                    메세지2
+                </div>
+                
+            </div>
+        </div>
+
+
+        
+
+        <div class="row friends_message">
+            <div class="col-2 w-auto">
+                <img class="radius_img" src="https://via.placeholder.com/40"/>
+            </div>
+            
+            <div class="col">
+                <div class="row" style="font-size:small">
+                    사람 1
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지3
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지4
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지5메세지5메세지5<br>
+                        메세지5
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:rgb(83, 83, 83);
+                        vertical-align:bottom;
+                        display:flex;
+                        align-items:flex-end;
+                        position:relative;
+                        padding-left:0.2rem;
+                    ">
+                        <div style="
+                            position: absolute;
+                            left:0.3rem;
+                            bottom:1rem;
+                            color:yellow;
+                        ">
+                            1
+                        </div>
+                        오후 10:40
+                    </div>
+                </div>
+            </div>
+
+            
+            
+        </div>
+
+
+
+        <div class="row friends_message">
+            <div class="col-2 w-auto">
+                <img class="radius_img" src="https://via.placeholder.com/40"/>
+            </div>
+            
+            <div class="col">
+                <div class="row" style="font-size:small">
+                    사람 2
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지6
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지7메세지7메세지7<br>
+                        메세지7
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지8
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:rgb(83, 83, 83);
+                        vertical-align:bottom;
+                        display:flex;
+                        align-items:flex-end;
+                        position:relative;
+                        padding-left:0.2rem;
+                    ">
+                        <div style="
+                            position: absolute;
+                            left:0.3rem;
+                            bottom:1rem;
+                            color:yellow;
+                        ">
+                            1
+                        </div>
+                        오후 10:40
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row friends_message">
+            <div class="col-2 w-auto">
+                <img class="radius_img" src="https://via.placeholder.com/40"/>
+            </div>
+            
+            <div class="col">
+                <div class="row" style="font-size:small">
+                    사람 2
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지6
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지7메세지7메세지7<br>
+                        메세지7
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지8
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:rgb(83, 83, 83);
+                        vertical-align:bottom;
+                        display:flex;
+                        align-items:flex-end;
+                        position:relative;
+                        padding-left:0.2rem;
+                    ">
+                        <div style="
+                            position: absolute;
+                            left:0.3rem;
+                            bottom:1rem;
+                            color:yellow;
+                        ">
+                            1
+                        </div>
+                        오후 10:40
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row friends_message">
+            <div class="col-2 w-auto">
+                <img class="radius_img" src="https://via.placeholder.com/40"/>
+            </div>
+            
+            <div class="col">
+                <div class="row" style="font-size:small">
+                    사람 2
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지6
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지7메세지7메세지7<br>
+                        메세지7
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지8
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:rgb(83, 83, 83);
+                        vertical-align:bottom;
+                        display:flex;
+                        align-items:flex-end;
+                        position:relative;
+                        padding-left:0.2rem;
+                    ">
+                        <div style="
+                            position: absolute;
+                            left:0.3rem;
+                            bottom:1rem;
+                            color:yellow;
+                        ">
+                            1
+                        </div>
+                        오후 10:40
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row friends_message">
+            <div class="col-2 w-auto">
+                <img class="radius_img" src="https://via.placeholder.com/40"/>
+            </div>
+            
+            <div class="col">
+                <div class="row" style="font-size:small">
+                    사람 2
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지6
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지7메세지7메세지7<br>
+                        메세지7
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지8
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:rgb(83, 83, 83);
+                        vertical-align:bottom;
+                        display:flex;
+                        align-items:flex-end;
+                        position:relative;
+                        padding-left:0.2rem;
+                    ">
+                        <div style="
+                            position: absolute;
+                            left:0.3rem;
+                            bottom:1rem;
+                            color:yellow;
+                        ">
+                            1
+                        </div>
+                        오후 10:40
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row friends_message">
+            <div class="col-2 w-auto">
+                <img class="radius_img" src="https://via.placeholder.com/40"/>
+            </div>
+            
+            <div class="col">
+                <div class="row" style="font-size:small">
+                    사람 2
+                </div>
+                
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지6
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지7메세지7메세지7<br>
+                        메세지7
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:yellow;
+                        display:flex;
+                        align-items:flex-end;
+                        padding-left:0.2rem;
+                    ">
+                        
+                        1
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-auto" style="
+                        border-radius: 10px;
+                        background-color:white;
+                        padding:0.4rem;
+                        margin-bottom: 0.2rem;
+                    ">
+                        메세지8
+                    </div>
+
+                    <div class="col" style="
+                        font-size:small;
+                        color:rgb(83, 83, 83);
+                        vertical-align:bottom;
+                        display:flex;
+                        align-items:flex-end;
+                        position:relative;
+                        padding-left:0.2rem;
+                    ">
+                        <div style="
+                            position: absolute;
+                            left:0.3rem;
+                            bottom:1rem;
+                            color:yellow;
+                        ">
+                            1
+                        </div>
+                        오후 10:40
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
