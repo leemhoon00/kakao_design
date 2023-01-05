@@ -1,23 +1,14 @@
 @charset "utf-8";
 
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
-
-    height: 50px;
-    padding: 1rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
 }
 
 #main{
     padding:1rem;
-    padding-top: 66px;
     padding-bottom: 60px;
 }
 
@@ -30,9 +21,6 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-
-    height: 60px;
-    padding: 1rem;
     font-weight: bold;
     justify-content: space-between;
     align-items: center;

@@ -22,7 +22,6 @@
 
 <body style="background-color:lightskyblue">
     
-
     <header style="
         display: flex;
         align-items: center;
@@ -31,6 +30,7 @@
         background-color:transparent;
         background-color:lightskyblue;
         z-index: 1;
+        padding:1rem;
     ">
         <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
@@ -701,20 +701,25 @@
         justify-content: flex-start;
         column-gap: 0.2rem;
     ">
-        <div>
+        <div style="
+            padding: 1rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        ">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
             </svg>
         </div>
-        <div>
-            <textarea onkeydown="textAreaChanged(event)" rows=1 style="
-                width:15rem;
-                border:none;
-                resize:none; 
-            "></textarea>
-        </div>
+        <textarea onkeydown="textAreaChanged(event)" rows="1" wrap="hard" style="
+            flex: 1;
+            border: none;
+            resize: none;
+        "></textarea>
         <div style="
-            margin-left:auto;
+            margin-left:1rem;
         ">
             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
